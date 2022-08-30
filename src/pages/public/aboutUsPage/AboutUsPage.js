@@ -23,7 +23,7 @@ const navigate = useNavigate()
 const scrolling = window.scroll(0,0, 'smooth')
 
 //const dispatch = useDispatch();
-const URI = 'http://localhost:3000/admin/members'
+const URI = 'https://somosmas-backend.herokuapp.com/admin/members'
 
 useEffect(() => {
   
