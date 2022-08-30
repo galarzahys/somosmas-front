@@ -1,0 +1,59 @@
+/* GENERAL */
+
+
+/* TITULO */
+.contactTitle {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: 575;
+    font-weight: bold;
+
+}
+
+/* INPUTS */
+.contactInput {
+    width: 90%;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px rgb(84, 82, 82);
+    border: none;
+    border-radius: 10px;
+}
+
+.contactText {
+    width: 90%;
+    height: 200px;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px rgb(84, 82, 82);
+    border: none;
+    border-radius: 10px;
+}
+
+/* BUTTON */
+.contactSubmit {
+    width: 250px;
+    background-color: rgba(0, 56, 255);
+    color: white;
+    border-radius: 10px;
+    border-width: 0;
+    border-style: none;
+    height: 50px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contactInicioBtn {
+    width: 100px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: black;
+    height: 30px;
+}
+.state_msg {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+}

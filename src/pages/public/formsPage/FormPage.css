@@ -1,0 +1,62 @@
+.container_login{
+    margin-top: 5rem;
+    display: grid;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+
+.img-responsive{
+    width: 100%;
+    visibility: hidden;
+}
+
+.form_login_container{
+    width: 70%;
+    margin: 0 auto;
+    gap: 40px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+
+.text_login{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text_login p{
+    text-align: left;
+    margin: 0;
+    font-weight: 500;
+}
+
+.text_login h1{
+    text-align: left;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+@media (min-width: 768px) {
+    .img-responsive{
+        visibility: visible;
+    }
+    
+    .container_login{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form_login_container{
+        width: 80%;
+    }
+}
+
+@media (min-width: 1228px) {
+    .form_login_container{
+        width: 60%;
+    }
+}

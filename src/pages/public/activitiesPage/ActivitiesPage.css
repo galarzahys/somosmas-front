@@ -1,0 +1,12 @@
+.slider_container {
+    width: 90%;
+    height: 90vh;
+}
+
+.preview_container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
