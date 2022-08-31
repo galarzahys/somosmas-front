@@ -1,6 +1,8 @@
 .slider_container {
-    width: 90%;
+    width: 100%;
     height: 90vh;
+    margin: 0;
+    padding: 0;
 }
 
 .preview_container {

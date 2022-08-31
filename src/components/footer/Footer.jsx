@@ -30,7 +30,7 @@ const Footer = () => {
          <a className='footerItem' href="https://www.facebook.com/" target="_blank"><FaFacebook className='footerIcon'/></a>
          <a className='footerItem' href="https://www.instagram.com/" target="_blank"><FaInstagram className='footerIcon'/></a>
       </div>
-      <p className='footerRights'>2022 by Alkemy. All Rights Reserved.</p>
+      <p className='footerRights'>2022 by Gonzalo Galarza on Alkemy-Labs. All Rights Reserved.</p>
       <img className='footerLogo' alt="logo" src={Logo} />
    </div>
   )

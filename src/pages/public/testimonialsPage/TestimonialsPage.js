@@ -73,9 +73,6 @@ const TestimonialsPage = () => {
           </Button>
         )}
         <br></br>
-        <Button variant="outline-dark" href="/" className="btn-back">
-          <h2>Ir al inicio</h2>
-        </Button>
       </div>
     </AnimatedPage>
   );

@@ -2,17 +2,17 @@
 
 /* GENERAL INFO */
 .aboutSection {
-    margin-top: 100px;
-    width: 90%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /* TITLE */
 .aboutContainer {
     display: flex;
     flex-wrap: wrap;
-    width: 95%;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 100%;
+    padding: 2%;
 }
 
 .aboutTitle {
@@ -26,6 +26,7 @@
 /* CLICKED MEMBER */
 .clickedMemberContainer {
     width: 100%;
+    margin: 0;
     margin-bottom: 50px;
     height: 80vh;
     
@@ -63,10 +64,13 @@
 }
 
 .clickedMemberCard {
+  width: 40%;
   height: 500px;
-  width: 500px;
   float: right;
+  margin: 0;
+  padding: 0;
 }
+
 
 .div_main {
     margin-top: 100px;
@@ -105,31 +109,51 @@ h1 {
 /* ALL MEMBERS */
 .memberCardContainer {
     width: 20%;
-    padding-right: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+
 }
 
 .memberCardContainer a {
     text-decoration: none;
 }
 
-.MV_container {
+.cardMember_section {
+    max-width: 100%;
+    min-width: 100%;
     display: flex;
-    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* RESPONSIVE */
 @media all and (max-width: 1000px) {
   .memberCardContainer {
     width: 25%;
-    padding-right: 1%;
   }
+
+  .clickedMemberCard {
+    height: 350px;
+    max-Width: 50%;
+    margin: 0;
+
+}
 
 }
 
 @media all and (max-width: 800px) {
+
+    .clickedMemberContainer {
+        width: 100%;
+        height: fit-content;
+        justify-content: center;
+        
+    }
     .clickedMemberName {
-        font-size: 1.5em;
-        height: 315px;
+        font-size: 2rem;
+        height: auto;
     }
     
     .serParteBtn {
@@ -138,13 +162,13 @@ h1 {
     }
 
     .clickedMemberCard {
-        height: 350px;
-        width: 50%;
+        height: 300px;
+        max-Width: 50%;
 
     }
 
     .memberCardContainer {
-      width: 33%;
+      min-width: 40%;
       padding-right: 1%;
     } 
 
@@ -152,31 +176,48 @@ h1 {
 
 @media all and (max-width: 640px) {
     .clickedMemberName {
-        font-size: 1.2em;
-        height: 325px;
-
+        height: 305px;
     }
-    
-    .serParteBtn {
+    .aboutTitle {
+        font-size: 2rem;
+        text-align: center;
         width: 100%;
-        font-size: 1rem;
     }
-
+    .clickedMemberContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        justify-content: center;
+        
+    }
     .clickedMemberCard {
         height: 350px;
-        width: 50%;
+        min-Width: 90%;
 
     }
-
-
+    .clickedMemberName{
+        margin: 0;
+        margin-bottom: 20px;
+        height: auto;
+        font-size: 2rem;
+    }
+    .clickedMemberAndBtn {
+        width: 90%;
+        text-align: center;
+    }
     .memberCardContainer {
-      width: 50%;
-    }  
-}
+        min-width: 90%;
+        padding-right: 1%;
+      } 
 
-@media all and (max-width: 417px) {
-    .clickedMemberName {
-        height: 305px;
+      .serParteBtn {
+        display: none !important;
+    }
+
+    .SPB {
+        display: block !important;
+        margin-left: 50px;
     }
 
 }

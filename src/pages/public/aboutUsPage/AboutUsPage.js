@@ -8,8 +8,6 @@ import ClickedMemberCard from "../../../components/cards/membersCard/clickedMemb
 import AnimatedPage from '../../../components/AnimatedPage';
 import {Link, useNavigate } from 'react-router-dom';
 import axios from "axios";
-import VisionBtn from "../../../components/dropdown/DropdownV";
-import MisionBtn from "../../../components/dropdown/DropdownM";
 
 
 const AboutUsPage = (props) => {
@@ -39,11 +37,7 @@ useEffect(() => {
 
     <AnimatedPage>
       <section className="aboutSection" >
-
         <h1 className="aboutTitle" id="main">¡Nuestro Staff!</h1>
-
-
-
         <div className="aboutContainer">
           {(
           <>
@@ -51,19 +45,19 @@ useEffect(() => {
               <div className="clickedMemberAndBtn">
                   <h2 className="clickedMemberName">{clickedMember.name}</h2>
                   <h5>{clickedMember.role}</h5>
+                  
                   <p>{clickedMember.content}</p>
                   <Link to="/contact"><Button className="serParteBtn" text='¡Quiero ser parte!' type="button"/></Link>
                   <div className="MV_container">        
-        <VisionBtn />
-        <MisionBtn />
         </div>
               </div>
               <ClickedMemberCard className="clickedMemberCard" key={clickedMember.id} image={clickedMember.image} />
 
+
             </div>
 
 
-
+            <div className="cardMember_section">
             {( members.map(member => (
                   <>
                       <div className="memberCardContainer" onClick={() => setClickedMember(member)}>
@@ -72,8 +66,12 @@ useEffect(() => {
                   </>
                   
             )))}
+            </div>
           </>
           )}
+        </div>
+        <div className="SPB" style={{ display: "none", minWidth: "200px"}} >
+        <Link to="/contact"><Button className="button-primary" text='¡Quiero ser parte!' type="button" style={{ minWidth: "200px"}}/></Link>
         </div>
       </section>
     </AnimatedPage>

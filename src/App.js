@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import PrivateRoute from './components/ProtectedRoutes/PrivateRoute';
 import LoggedRoute from './components/ProtectedRoutes/LoggedRoute';
 import NotLoggedRoute from './components/ProtectedRoutes/NotLoggedRoute';
+import './App.css'
 
 // public
 import Header from './components/header/Header';
@@ -11,7 +12,6 @@ import NewsPage from "./pages/public/newsPage/NewsPage";
 import NewsDetail from './pages/public/newsPage/NewsDetails/NewsDetail';
 import AboutUsPage from "./pages/public/aboutUsPage/AboutUsPage";
 import ActivitiesPage from "./pages/public/activitiesPage/ActivitiesPage";
-import ActivityDetails from './pages/public/activitiesPage/ActivitiesDetail/ActivityDetailsPage';
 import TestimonialsPage from './pages/public/testimonialsPage/TestimonialsPage';
 import ContactPage from "./pages/public/contactPage/ContactPage";
 import Login from './pages/public/formsPage/LoginPage';
@@ -33,15 +33,15 @@ import TestimonialsList from './components/testimonialsTable/TestimonyList';
 import TestimonialsFormPage from './pages/backOffice/testimonialsPage/TestimonialsFormPage';
 import UsersList from './components/usersTable/UserList';
 import UsersFormPage from './pages/backOffice/usersPage/UsersFormPage';
-import UserInfo from './components/UserInfo/UserInfo';
 import ActivitiesDetailsPage from './pages/public/activitiesPage/ActivitiesDetail/ActivityDetailsPage';
 import UserSetPage from './pages/public/aboutUsPage/userPage/UserSetPage';
 
 function App() {
   return (
-    <div className="App general">
+    <div className="app_layout">
       <BrowserRouter>
         <Header />
+        <div className="app_content">
           <Routes>
 
             {/* public routes */}
@@ -82,10 +82,10 @@ function App() {
             {/* Users */}
             <Route path="/login" element={<LoggedRoute><Login /></LoggedRoute>} />
             <Route path="/registrate" element={<LoggedRoute><Register /></LoggedRoute>} />
-            <Route path="/profile/" element={<NotLoggedRoute><UserInfo /></NotLoggedRoute>} />
             <Route path="/userset/:id" element={<NotLoggedRoute><UserSetPage /></NotLoggedRoute>} />
 
           </Routes>
+          </div>
         <Footer />
       </BrowserRouter>
 

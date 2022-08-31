@@ -1,11 +1,10 @@
 .container_news {
-    margin-top: 120px;
     text-align: center;
     width: 100%;
 }
 
 .NewsTitle {
-    font-size: 4em;
+    font-size: 3em;
     margin-bottom: 50px;
 }
 
@@ -61,4 +60,13 @@
         font-size: 2em;
         font-weight: 500;
     }
+
+}
+
+@media (max-width: 420px) {
+
+    .newsContainer {
+    zoom: 0.7;
+     
+     }
 }

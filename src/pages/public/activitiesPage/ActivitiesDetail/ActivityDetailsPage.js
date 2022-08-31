@@ -33,11 +33,7 @@ function ActivitiesDetailsPage() {
           <div className="act_text">
             <h2>{activities.name}</h2>
             <p>{activities.content}</p>
-            <Button
-              onClick={() => navigate("/activities")}
-              className="button-primary"
-              text="Volver a listado de actividades"
-            />
+            
           </div>
           <img
             src={
@@ -48,6 +44,11 @@ function ActivitiesDetailsPage() {
             alt={activities.name}
           ></img>
         </div>
+        <Button
+              onClick={() => navigate("/activities")}
+              className="button-primary"
+              text="Volver a listado de actividades"
+            />
 
         <br />
         <br />

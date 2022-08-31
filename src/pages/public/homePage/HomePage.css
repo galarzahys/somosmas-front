@@ -123,7 +123,7 @@
     }
   
     .welcome_img {
-        width: 80%;
+        width: 100%;
         margin-top: 10px;
         border-radius: 5%;
     }
@@ -144,8 +144,9 @@
         overflow: scroll;
         justify-content: space-around;
         align-items: center;
-        width: 90%;
+        width: 100%;
         margin-left: 50px;
+        zoom: 0.8;
     }
 
     .testimonials-item {
@@ -190,5 +191,8 @@
         width: 80% !important;
         margin: 0;
     }
-  
+
+    .home_new_card_container {
+        zoom: 0.7;
+    }
   }

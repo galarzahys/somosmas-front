@@ -40,14 +40,13 @@ const NewsDetail = () => {
          <div className="newsDetailTextAndImg">
             <div className="newsDetailText">
                <h2 className="newsDetailTitle">{news.name}</h2>
-               <h6 className="NewsDetailType">Categoria: {news.type}</h6>
-               <h6 className="NewsDetailDate">Fecha de creacion: {news.createdAt}</h6>
+               <p className="NewsDetailContent">{news.content}</p>
             </div>
             <img src={"https://s3.sa-east-1.amazonaws.com/ot242-server/" + news.image} className="NewsDetailImg"></img>
 
          </div>
          
-         <p className="NewsDetailContent">{news.content}</p>
+
          <br /><br />
          <Button onClick={()=> navigate("/news")} className="button-primary" text="Volver a listado de novedades"/>
     </div>
